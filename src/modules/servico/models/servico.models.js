@@ -20,7 +20,7 @@ const Servico = sequelize.define(
         },
         tipo_servico: {
             type: DataTypes.ENUM,
-            values: ['elétrica', 'hidráulica']
+            values: ['elétrica', 'hidráulica', 'outro']
         },
         data_solicitada: {
             type: DataTypes.STRING,
