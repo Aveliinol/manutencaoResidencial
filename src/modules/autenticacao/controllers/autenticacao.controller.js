@@ -73,6 +73,7 @@ class AutenticacaoController {
         }
         const dadosUsuario = {
           nome: usuario.nome,
+          id: usuario.id,
           papel: "admin",
         };
         const novoTokenAcesso = this.gerarTokenAcesso(dadosUsuario);

@@ -1,9 +1,10 @@
 const express = require('express');
 const dotenv = require('dotenv');
-const cors = require('cors')
+const cors = require('cors');
 const { sequelize } = require('./src/config/configDB');
-const authRoute = require('./src/modules/autenticacao/routes/autenticacao.routes')
-const usuarioRoute = require('./src/modules/usuario/routes/usuario.routes')
+const authRoute = require('./src/modules/autenticacao/routes/autenticacao.routes');
+const usuarioRoute = require('./src/modules/usuario/routes/usuario.routes');
+const servicoRoute = require('./src/modules/servico/routes/servico.routes');
 
 dotenv.config();
 
@@ -18,6 +19,8 @@ app.use(express.json());
 app.use('/api/', usuarioRoute)
 
 app.use('/api/', authRoute)
+
+app.use('/api/', servicoRoute)
 
 const PORTA = process.env.PORTA;
 app.listen(PORTA, async () => {
