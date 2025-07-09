@@ -53,10 +53,12 @@ Sistema de gerenciamento de serviços de manutenção residencial. Permite que u
 
 2. Instale as dependências:
 
+   ```bash
    npm install
 
 3. Crie um arquivo .env na raiz do projeto e adicione as variáveis de ambiente:
 
+   ```bash
    DB_DATABASE=<nome_do_banco>
    DB_USER=<usuario_do_banco>
    DB_PASSWORD=<senha_do_banco>
@@ -71,9 +73,10 @@ Sistema de gerenciamento de serviços de manutenção residencial. Permite que u
 
 1. Inicie o servidor:
 
+   ```bash
    npm start
 
-2. O servidor estará disponível na porta definida em PORT no arquivo .env.
+4. O servidor estará disponível na porta definida em PORT no arquivo .env.
 
 📡 Endpoints da API
 
