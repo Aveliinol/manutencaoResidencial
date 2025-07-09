@@ -81,6 +81,7 @@ Sistema de gerenciamento de serviços de manutenção residencial. Permite que u
 📡 Endpoints da API
 
 🔐 Autenticação
+
 POST /api/login – Realiza login.
 
 POST /api/logout – Realiza logout.
@@ -88,11 +89,13 @@ POST /api/logout – Realiza logout.
 POST /api/refresh-token – Gera novo token de acesso.
 
 👤 Usuários
+
 POST /api/cadastrar – Cadastra novo usuário.
 
 GET /api/perfil – Retorna o perfil do usuário autenticado.
 
 🧰 Serviços
+
 POST /api/criar – Cadastra um novo serviço.
 
 PUT /api/editar/:id – Edita um serviço existente.
